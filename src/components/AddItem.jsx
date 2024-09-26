@@ -20,11 +20,24 @@ export default function AddItem({addItem})
     return(
         
         <div>
+            <div class="container-md p-1">
             <InputItem nombre = {nombre} setNombre={setNombre} />
-            <BtnAdd onClick = {onAgregarProducto} disabled = {cantidad === 0} /> 
+
+            </div>
+            
+            <div class="container-md p-1">
             <InputAmount setCantidad = {setCantidad} cantidad = {cantidad} />
+
+            </div>
+            <div class="container-md p-1">
+            
+            <div>
+            <button onClick = {onAgregarProducto} disabled = {cantidad === 0} class="btn btn-outline-primary w-100"  > AGREGAR </button>
+            </div>
+            </div>
         </div>
     
        
     )
     }
+

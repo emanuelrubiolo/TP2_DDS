@@ -35,10 +35,15 @@ export default function Cart({items, delItem, updateAmount, updateName})
 
     return(
        <div>
-           <label> carrito </label>
+           <h2>Carrito</h2>
+           <div class="container">
+           
            <ul>
             {items.map((item,index) => (
                 <li key={index}>
+                    <div class="row m-1">
+
+                   
 
                     {itemEdicion === item.nombre ? (
                         <input type = "text" 
@@ -52,14 +57,30 @@ export default function Cart({items, delItem, updateAmount, updateName})
                         onDoubleClick={() => iniciarEdicion(item)}>{item.nombre}
                         </span>
                     )}
-                     - Cantidad: {item.cantidad}
-                    <button onClick={() => delItem(item.nombre)}>Eliminar</button>
-                    <button onClick={() => sum1(item)}>+</button>
-                    <button onClick={() => res1(item)}>-</button>
+                    
 
+                        <div class="col-3 py-1">
+                        Cantidad: {item.cantidad}
+
+                        </div>
+                        
+                            <div class="col-2">
+                            <button class="btn btn-outline-primary btn-sm   asd" onClick={() => delItem(item.nombre)}>Eliminar</button>
+
+                            </div>
+                            <div class="col-2">
+                            <button class="btn btn-outline-primary btn-sm" onClick={() => sum1(item)}>+</button>
+                            <button class="btn btn-outline-primary btn-sm a" onClick={() => res1(item)}>-</button>
+                            </div>
+                            
+                        
+                    
+                            </div>
                 </li>
             ))}
            </ul>
+           
+           </div>
        </div> 
     );
 }

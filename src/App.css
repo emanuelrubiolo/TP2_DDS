@@ -1,0 +1,109 @@
+body{
+    background-color: #16425b;
+}
+
+input{
+    background-color: transparent;
+    border-color: white;  
+    border-radius: 3px; 
+    border-style: solid;
+    border-width: 1px;
+    color: white;
+    
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+input::placeholder{
+    color: rgb(227, 227, 227);
+    font-weight: 200;
+}
+
+.a{
+    margin-left: 5px;
+}
+
+
+  h2 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    border-color: black;
+  }
+
+label{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+}
+li{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: white;
+}
+
+h2{
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+
+
+
+
+.tabs {
+    display: flex;
+    margin-bottom: 16px;
+  }
+  
+  .tab {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal; 
+    padding: 10px 20px;
+    margin-right: 4px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #fdf0d5;
+    border: none;
+    outline: none;
+  }
+  
+  .tab.active {
+    background-color: #724CF9;
+    color: white;
+  }
+
+  .tab:hover{
+    background-color: #724CF9;
+    
+  }
+  
+  .tab-content {
+    display: none;
+    
+  }
+  
+  .tab-content.active {
+    display: block;
+  }
+  
+  .btnC{
+    background-color: #724CF9;
+  }
+  .btnC:hover{
+    background-color: #4e24e7;
+
+  }
