@@ -34,13 +34,14 @@ export default function Cart({items, delItem, updateAmount, updateName})
     }
 
     return(
-       <div>
+       <div >
            <h2>Carrito</h2>
-           <div class="container">
+           <div class="card shadow  pt-4 p-3 mb-5 bg-transparent rounded">
            
            <ul>
             {items.map((item,index) => (
                 <li key={index}>
+                    
                     <div class="row m-1">
 
                    
@@ -65,12 +66,12 @@ export default function Cart({items, delItem, updateAmount, updateName})
                         </div>
                         
                             <div class="col-2">
-                            <button class="btn btn-outline-primary btn-sm   asd" onClick={() => delItem(item.nombre)}>Eliminar</button>
+                            <button class="btn btn-outline-primary btn-sm   asd btnA" onClick={() => delItem(item.nombre)}>Eliminar</button>
 
                             </div>
                             <div class="col-2">
-                            <button class="btn btn-outline-primary btn-sm" onClick={() => sum1(item)}>+</button>
-                            <button class="btn btn-outline-primary btn-sm a" onClick={() => res1(item)}>-</button>
+                            <button class="btn btn-outline-primary btn-sm btnA" onClick={() => sum1(item)}>+</button>
+                            <button class="btn btn-outline-primary btn-sm a btnA" onClick={() => res1(item)}>-</button>
                             </div>
                             
                         
