@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/TP2_DDS/static/css/main.6ac37993.css",
+    "main.js": "/TP2_DDS/static/js/main.b7afe6e6.js",
+    "static/js/453.a397295f.chunk.js": "/TP2_DDS/static/js/453.a397295f.chunk.js",
+    "index.html": "/TP2_DDS/index.html",
+    "main.6ac37993.css.map": "/TP2_DDS/static/css/main.6ac37993.css.map",
+    "main.b7afe6e6.js.map": "/TP2_DDS/static/js/main.b7afe6e6.js.map",
+    "453.a397295f.chunk.js.map": "/TP2_DDS/static/js/453.a397295f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6ac37993.css",
+    "static/js/main.b7afe6e6.js"
+  ]
+}
